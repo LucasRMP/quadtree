@@ -6,20 +6,26 @@ class Point {
 }
 
 class Rectangle {
-  constructor(x, y, d) {
+  constructor(x, y, w, h) {
     this.x = x;
     this.y = y;
-    this.dimension = d;
+    this.w = w;
+    this.h = h;
   }
 
-  intercepts(other) {
-    return !(false);
+  contains(other) {
+    return !(
+      other.x < this.x - this.w ||
+      other.x > this.x + this.w ||
+      other.y < this.y - this.h ||
+      other.y > this.y + this.h
+    );
   }
 
-  draw() {
-    noFill();
+  show() {
     stroke(255);
-    rect(this.x, this.y, this.dimension, this.dimension);
+    noFill();
+    rectMode(CENTER);
+    rect(this.x, this.y, this.w*2, this.h*2);
   }
-
 }

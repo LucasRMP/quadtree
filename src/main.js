@@ -1,16 +1,17 @@
-
-function getRandomPosition() {
-  let x = random(0, width);
-  let y = random(0, height);
-
-  return { x, y }
-}
+const size = 500;
+let nw, sw, ne, se;
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(size, size);
   background(51);
-}
 
-function draw() {
+  let boundary = new Rectangle(size/2, size/2, size/2, size/2);
+  let qt = new QuadTree(boundary, 4);
 
+  for(let i = 0; i < 30; i++) {
+    let p = new Point(random(width/2), random(height/2));
+    qt.insert(p);
+  }
+
+  console.log(qt);
 }
