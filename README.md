@@ -1,8 +1,10 @@
 # QuadTree Visualization
 
-This is a visualization of the QuadTree data structure built in javascript using the [P5.js](https://p5js.org) framework, the idea is to give a ui so the user can see how the quadtree is structured and a simple range query vizualization.
+Click [here](https://lucasrmp.github.io/quadtree/) to see the functional project
 
-#
+This is a visualization of the QuadTree data structure built in javascript using the [P5.js](https://p5js.org) framework, the idea is to give a ui so the user can see how the quadtree is structured and a simple range query vizualization.
+_____
+
 ## About the QuadTree
 A quadtree is a tree data structure in which each internal node has exactly four children. Quadtrees are the two-dimensional analog of octrees and are most often used to partition a two-dimensional space by recursively subdividing it into four quadrants or regions. The data associated with a leaf cell varies by application, but the leaf cell represents a "unit of interesting spatial information".
 
