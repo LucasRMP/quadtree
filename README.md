@@ -1,6 +1,6 @@
 # QuadTree Visualization
 
-Click [here](https://lucasrmp.github.io/quadtree/) to see the functional project
+Click <a href="https://lucasrmp.github.io/quadtree/" target="_blank">here</a> to see the functional project
 
 This is a visualization of the QuadTree data structure built in javascript using the [P5.js](https://p5js.org) framework, the idea is to give a ui so the user can see how the quadtree is structured and a simple range query vizualization.
 _____
